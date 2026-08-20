@@ -4,49 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Personal website of Trong Do Quoc, physics graduate student.">
+  <meta name="theme-color" content="#1477ad">
   <title>Trong Do Quoc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=La+Belle+Aurore&family=Oswald:wght@500;600&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/author/avt.png">
-  <link rel="stylesheet" href="/css/site.css">
+  <link rel="preload" as="image" href="/assets/images/coastal-hero.jpg">
+  <link rel="stylesheet" href="/css/site.css?v=20260820-26">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="/">Trong Do</a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a class="active" href="/">Home</a>
-      <a href="/cv.html">CV</a>
-      <a href="/blog.html">Blog</a>
-      <a href="mailto:trong.q.do.space@gmail.com">Contact</a>
-    </nav>
+<body class="home-page">
+  <header class="site-header home-header">
+    <div class="home-shell nav">
+      <a class="brand home-brand" href="/" aria-current="page">Trong Do Quoc</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-menu"><span class="nav-toggle-icon" aria-hidden="true"></span></button>
+      <nav id="site-menu" class="menu home-menu" aria-label="Main navigation">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/cv.html">CV</a>
+        <a href="/research.html">Projects</a>
+        <a href="/blog.html">Materials</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="home-layout">
-    <section class="intro">
-      <div class="portrait-wrap">
-        <img class="portrait" src="/author/avt.png" alt="Portrait of Trong Do Quoc">
-      </div>
-      <div class="intro-copy">
-        <p class="eyebrow">Physics graduate student</p>
-        <h1>Trong Do Quoc</h1>
-        <p class="pronunciation">For French speakers, pronounce "Trong" as "Traong".</p>
-        <p>
-          I am interested in theoretical physics, especially general relativity,
-          particle physics, and the way physics is learned and taught.
-        </p>
-        <p>
-          This site is a quiet place for my academic path, research notes, and
-          essays. The homepage stays short; the details live in the CV and blog.
-        </p>
-        <div class="action-row">
-          <a class="button primary" href="/cv.html">Read my CV</a>
-          <a class="button" href="/blog.html">Visit the blog</a>
+  <main class="home-main">
+    <section class="home-hero" aria-labelledby="home-title">
+      <picture class="home-backdrop">
+        <img src="/assets/images/coastal-hero.jpg" width="1672" height="941" alt="Rocky coast beneath a wide blue sky" fetchpriority="high">
+      </picture>
+      <div class="home-shade" aria-hidden="true"></div>
+      <div class="home-shell home-copy">
+        <div class="home-copy-inner">
+          <h1 id="home-title">Trong Do Quoc</h1>
+          <p class="home-role">Astrophysics Research Assistant</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <span>&copy; 2026 Trong Do Quoc</span>
-    <a href="mailto:trong.q.do.space@gmail.com">trong.q.do.space@gmail.com</a>
-  </footer>
+  <script src="/js/site.js"></script>
 </body>
 </html>

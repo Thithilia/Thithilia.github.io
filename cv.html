@@ -4,99 +4,216 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Detailed academic CV of Trong Do Quoc.">
+  <meta name="theme-color" content="#ffffff">
   <title>CV | Trong Do Quoc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=La+Belle+Aurore&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/author/avt.png">
-  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/site.css?v=20260820-26">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="/">Trong Do</a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a class="active" href="/cv.html">CV</a>
-      <a href="/blog.html">Blog</a>
-      <a href="mailto:trong.q.do.space@gmail.com">Contact</a>
-    </nav>
+<body class="subpage" id="top">
+  <header class="site-header subpage-header">
+    <div class="subpage-shell nav">
+      <a class="brand subpage-brand" href="/">Trong Do Quoc</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-menu"><span class="nav-toggle-icon" aria-hidden="true"></span></button>
+      <nav id="site-menu" class="menu" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/cv.html" aria-current="page">CV</a>
+        <a href="/research.html">Projects</a>
+        <a href="/blog.html">Materials</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page-layout">
-    <section class="page-title">
-      <p class="eyebrow">Curriculum vitae</p>
-      <h1>Academic path and research interests</h1>
-      <p>
-        A longer-form CV with context around my education, research direction,
-        teaching interests, and scientific motivations.
-      </p>
-    </section>
+  <section class="subpage-cover" aria-label="Coastal landscape">
+    <img src="/assets/images/coastal-hero.jpg" alt="Rocky coast beneath a wide blue sky">
+  </section>
 
-    <section class="cv-flow">
-      <div class="content-stack">
-        <section class="content-section">
-          <h2>Research Direction</h2>
-          <p>
-            My current interests are in theoretical physics, with attention to
-            modified general relativity, particle physics, and the conceptual
-            foundations that connect mathematical structure with physical
-            interpretation.
-          </p>
-          <p>
-            I hope to become a lifelong participant in theoretical physics as a
-            researcher and professor, combining research work with thoughtful
-            physics education.
-          </p>
-        </section>
+  <main class="subpage-shell profile-layout">
+    <aside class="profile-sidebar" aria-label="Profile">
+      <figure class="profile-photo">
+        <img src="/author/portrait-about.jpg" alt="Portrait of Trong Do Quoc">
+      </figure>
+      <div class="profile-details">
+        <h2>Trong Do Quoc</h2>
+        <p>Research Assistant</p>
+        <p>Department of Astrophysics</p>
+        <p>Vietnam National Space Center</p>
+        <a href="mailto:trong.q.do.space@gmail.com">trong.q.do.space@gmail.com</a>
+        <div class="social-links" aria-label="Professional profiles">
+          <a class="social-link" href="https://orcid.org/0009-0001-6321-5944" target="_blank" rel="me noopener noreferrer">
+            <span class="social-mark social-mark--orcid" aria-hidden="true"><img src="/assets/icons/orcid.svg" alt=""></span>
+            <span>ORCID</span>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/trong-do-884590407/" target="_blank" rel="me noopener noreferrer">
+            <span class="social-mark social-mark--linkedin" aria-hidden="true"><img src="/assets/icons/linkedin.svg?v=2" alt=""></span>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-link" href="https://github.com/Thithilia" target="_blank" rel="me noopener noreferrer">
+            <span class="social-mark social-mark--github" aria-hidden="true"><img src="/assets/icons/github.svg" alt=""></span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </aside>
 
-        <section class="content-section">
-          <h2>Education</h2>
-          <div class="timeline">
-            <article>
-              <span class="date">2025</span>
-              <h3>Master 2 in Nuclei, Particles, Astroparticles and Cosmology</h3>
-              <p>Universite Paris Cite</p>
-            </article>
-            <article>
-              <span class="date">2024</span>
-              <h3>Master 1 in Space</h3>
-              <p>University of Science and Technology of Hanoi</p>
-            </article>
-            <article>
-              <span class="date">2023</span>
-              <h3>BSc in Space and Applications</h3>
-              <p>University of Science and Technology of Hanoi</p>
-            </article>
+    <div class="subpage-content cv-content">
+      <div class="cv-title-row">
+        <h1>Curriculum Vitae</h1>
+        <a class="cv-download" href="/assets/docs/DoQuocTrong_CV.pdf" download="DoQuocTrong_CV.pdf" aria-label="Download full CV as a PDF" title="Download full CV (PDF)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <path d="M12 18v-6"></path>
+            <path d="m9 15 3 3 3-3"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="cv-block-stack">
+        <section class="cv-block">
+          <header class="cv-block-heading">
+            <h2>General Information</h2>
+          </header>
+          <div class="cv-info-list">
+            <div class="cv-info-row">
+              <dt>Name</dt>
+              <dd>Trong Do Quoc</dd>
+            </div>
+            <div class="cv-info-row">
+              <dt>Position</dt>
+              <dd>Research Assistant</dd>
+            </div>
+            <div class="cv-info-row">
+              <dt>Affiliation</dt>
+              <dd>Department of Astrophysics, Vietnam National Space Center</dd>
+            </div>
+            <div class="cv-info-row">
+              <dt>Email</dt>
+              <dd><a href="mailto:trong.q.do.space@gmail.com">trong.q.do.space@gmail.com</a></dd>
+            </div>
           </div>
         </section>
 
-        <section class="content-section">
-          <h2>Interests</h2>
-          <ul class="tag-list">
-            <li>Modified general relativity</li>
-            <li>Particle physics</li>
-            <li>Astroparticles and cosmology</li>
-            <li>Physics education</li>
-          </ul>
+        <section class="cv-block">
+          <header class="cv-block-heading">
+            <h2>Education</h2>
+          </header>
+          <ol class="cv-entry-list">
+            <li class="cv-entry cv-entry--education">
+              <time datetime="2025"><span>2025</span></time>
+              <div>
+                <h3>Master 2 in Nuclei, Particles, Astroparticles and Cosmology</h3>
+                <p>Universite Paris Cite</p>
+              </div>
+              <div class="cv-institution-logo cv-institution-logo--upcite">
+                <img src="/assets/images/institutions/universite-paris-cite.png" alt="Universite Paris Cite logo">
+              </div>
+            </li>
+            <li class="cv-entry cv-entry--education cv-entry--dual-logos">
+              <time datetime="2024"><span>2024</span></time>
+              <div>
+                <h3>Master 1 in Space</h3>
+                <p>University of Science and Technology of Hanoi</p>
+              </div>
+              <div class="cv-institution-logo cv-institution-logo--dual">
+                <img class="cv-logo--upcite" src="/assets/images/institutions/universite-paris-cite.png" alt="Universite Paris Cite logo">
+                <img class="cv-logo--usth" src="/assets/images/institutions/usth.png" alt="University of Science and Technology of Hanoi logo">
+              </div>
+            </li>
+            <li class="cv-entry cv-entry--education">
+              <time datetime="2023"><span>2023</span></time>
+              <div>
+                <h3>BSc in Space and Applications</h3>
+                <p>University of Science and Technology of Hanoi</p>
+              </div>
+              <div class="cv-institution-logo cv-institution-logo--usth">
+                <img src="/assets/images/institutions/usth.png" alt="University of Science and Technology of Hanoi logo">
+              </div>
+            </li>
+          </ol>
         </section>
 
-        <section class="content-section">
-          <h2>Name</h2>
-          <p>
-            In Vietnamese name order, the family name comes first, followed by
-            the middle name and given name. My Vietnamese name is Do Quoc Trong:
-            Do is my family name, Quoc is my middle name, and Trong is my given
-            name.
-          </p>
-          <p>
-            In English, "Trong" is direct to pronounce; "Do" sounds close to the
-            "o" in "bro"; and "Quoc" sounds close to "quote".
-          </p>
+        <section class="cv-block">
+          <header class="cv-block-heading">
+            <h2>Work</h2>
+          </header>
+          <ol class="cv-entry-list">
+            <li class="cv-entry">
+              <time><span>Present</span></time>
+              <div>
+                <h3>Research Assistant</h3>
+                <p>Department of Astrophysics, Vietnam National Space Center</p>
+                <ul class="cv-entry-notes">
+                  <li>Supervisor: Dr. Nguyen Bich Ngoc</li>
+                  <li>Research on star formation in molecular clouds and the physical mechanisms governing the star-formation process.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="cv-entry">
+              <time><span>2024-2025</span></time>
+              <div>
+                <h3>Master 2 Internship</h3>
+                <p>Laboratoire Astroparticule et Cosmologie (APC), Paris, France</p>
+                <ul class="cv-entry-notes">
+                  <li>Project: &ldquo;Systematic Search for Energy-dependent Morphologies in TeV Gamma-ray Sources&rdquo;</li>
+                  <li>Supervisors: Dr. Bruno Kh&eacute;lifi and Dr. Kirsty Feijen</li>
+                </ul>
+              </div>
+            </li>
+            <li class="cv-entry">
+              <time><span>2023-2024</span></time>
+              <div>
+                <h3>Master 1 Internship</h3>
+                <p>Institute of Physics (IOP-VAST), Vietnam</p>
+                <ul class="cv-entry-notes">
+                  <li>Project: &ldquo;The f(R, T) gravity and application in cosmology to explain dark energy&rdquo;</li>
+                  <li>Supervisors: Assoc. Prof. Nguyen Thi Hong Van and Dr. Pham Van Ky</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="cv-block">
+          <header class="cv-block-heading cv-block-heading--long">
+            <h2>Grants, Awards, Fellowships, and Technical Competitions</h2>
+          </header>
+          <ol class="cv-entry-list">
+            <li class="cv-entry">
+              <time datetime="2024"><span>2024</span></time>
+              <div>
+                <h3>France Excellence Scholarship</h3>
+                <p>French Embassy scholarship for the Master 2 programme in France.</p>
+              </div>
+            </li>
+            <li class="cv-entry">
+              <time datetime="2022"><span>2022</span></time>
+              <div>
+                <h3>First Prize, Vietnam Student Physics Olympiad</h3>
+                <p>Undergraduate student competition.</p>
+              </div>
+            </li>
+            <li class="cv-entry">
+              <time datetime="2021"><span>2021</span></time>
+              <div>
+                <h3>Second Prize, Vietnam Student Physics Olympiad</h3>
+                <p>Undergraduate student competition.</p>
+              </div>
+            </li>
+          </ol>
         </section>
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <span>&copy; 2026 Trong Do Quoc</span>
-    <a href="/">Back to home</a>
+  <footer class="subpage-footer">
+    <div class="subpage-shell footer-grid">
+      <p>&copy; Copyright 2026 Trong Do Quoc. Hosted by GitHub Pages. Last updated: August 20, 2026.</p>
+    </div>
   </footer>
+  <script src="/js/site.js"></script>
 </body>
 </html>

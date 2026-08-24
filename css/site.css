@@ -1100,7 +1100,7 @@ blockquote {
 }
 
 .subpage .menu a[aria-current="page"] {
-  border-color: #a8443f;
+  border-color: deeppink;
   color: #181818;
 }
 
@@ -1172,14 +1172,14 @@ blockquote {
   max-width: 100%;
   margin-top: 17px;
   border-bottom: 1px solid currentColor;
-  color: #93423f;
+  color: deeppink;
   font-size: 14px;
   overflow-wrap: anywhere;
 }
 
 .profile-details .sidebar-link {
   margin-top: 12px;
-  color: #343434;
+  color: deeppink;
 }
 
 .social-links {
@@ -1195,7 +1195,7 @@ blockquote {
   gap: 10px;
   margin-top: 0;
   border: 0;
-  color: #343434;
+  color: deeppink;
   font-size: 15px;
 }
 
@@ -1330,7 +1330,7 @@ blockquote {
   display: inline-block;
   margin-top: 5px;
   border-bottom: 1px solid currentColor;
-  color: #8d3f3b;
+  color: deeppink;
   font-weight: 500;
 }
 
@@ -1545,6 +1545,10 @@ blockquote {
   grid-template-columns: 112px minmax(0, 1fr) 280px;
 }
 
+.cv-entry--work-logo {
+  grid-template-columns: 112px minmax(0, 1fr) 150px;
+}
+
 .cv-institution-logo {
   display: flex;
   min-height: 64px;
@@ -1567,8 +1571,8 @@ blockquote {
 }
 
 .cv-institution-logo--usth img {
-  max-width: 132px;
-  max-height: 66px;
+  max-width: 112px;
+  max-height: 52px;
 }
 
 .cv-institution-logo--dual {
@@ -1582,8 +1586,44 @@ blockquote {
 }
 
 .cv-institution-logo--dual .cv-logo--usth {
-  max-width: 126px;
-  max-height: 63px;
+  max-width: 108px;
+  max-height: 52px;
+}
+
+.cv-work-logo {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  align-self: center;
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+
+.cv-work-logo img {
+  width: auto;
+  max-width: 145px;
+  max-height: 76px;
+  object-fit: contain;
+}
+
+.cv-work-logo--apc img {
+  max-width: 74px;
+  max-height: 74px;
+}
+
+.cv-work-logo--iop img {
+  max-width: 124px;
+  max-height: 76px;
+}
+
+.cv-work-logo--kasi img {
+  max-width: 145px;
+  max-height: 52px;
+}
+
+.cv-work-logo--vnsc img {
+  max-width: 145px;
+  max-height: 64px;
 }
 
 .cv-entry:last-child {
@@ -1608,6 +1648,11 @@ blockquote {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
+}
+
+.cv-program-link {
+  border-bottom: 1px solid rgba(255, 20, 147, 0.5);
+  color: deeppink;
 }
 
 .cv-entry p {
@@ -1715,8 +1760,8 @@ blockquote {
 }
 
 .project-entry h2 a {
-  border-bottom: 1px solid rgba(141, 63, 59, 0.52);
-  color: #8d3f3b;
+  border-bottom: 1px solid rgba(255, 20, 147, 0.52);
+  color: deeppink;
 }
 
 .project-entry .inline-link {
@@ -1728,6 +1773,33 @@ blockquote {
   margin-bottom: 0;
   color: #777777;
   font-style: italic;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 2px 0 8px;
+}
+
+.project-actions a {
+  border-bottom: 1px solid rgba(255, 20, 147, 0.52);
+  color: deeppink;
+  font-weight: 500;
+}
+
+.project-feature-list {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding-left: 21px;
+  color: #565656;
+  line-height: 1.7;
+}
+
+.project-feature-list strong {
+  color: #222222;
+  font-weight: 600;
 }
 
 .section-heading-row {
@@ -1743,8 +1815,8 @@ blockquote {
 }
 
 .materials-list h3 a {
-  color: #222222;
-  border-bottom: 1px solid rgba(141, 63, 59, 0.5);
+  color: deeppink;
+  border-bottom: 1px solid rgba(255, 20, 147, 0.5);
 }
 
 .materials-list .inline-link {
@@ -1763,7 +1835,7 @@ blockquote {
 .longform .back-link {
   display: inline-block;
   margin-bottom: 25px;
-  color: #8d3f3b;
+  color: deeppink;
 }
 
 .longform > p {
@@ -1809,6 +1881,16 @@ blockquote {
   }
 
   .cv-entry--education .cv-institution-logo {
+    grid-column: 2;
+    justify-content: flex-start;
+    padding: 8px 0 0;
+  }
+
+  .cv-entry--work-logo {
+    grid-template-columns: 112px minmax(0, 1fr);
+  }
+
+  .cv-entry--work-logo .cv-work-logo {
     grid-column: 2;
     justify-content: flex-start;
     padding: 8px 0 0;
@@ -2013,6 +2095,10 @@ blockquote {
   }
 
   .cv-entry--education .cv-institution-logo {
+    grid-column: 1;
+  }
+
+  .cv-entry--work-logo .cv-work-logo {
     grid-column: 1;
   }
 
